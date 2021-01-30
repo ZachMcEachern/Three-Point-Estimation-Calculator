@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ecs.fullerton.edu.mceachernzacharyapp1.Main">
+
+    <TextView
+        android:id="@+id/nominalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/optimisticEditText"
+        android:layout_alignLeft="@+id/optimisticTextView"
+        android:layout_alignStart="@+id/optimisticTextView" />
+
+    <TextView
+        android:id="@+id/optimisticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="69dp"
+        android:text="Optimistic:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/pessimisticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pessimistic"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="229dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/nominalTextView"
+        android:layout_alignLeft="@+id/nominalTextView"
+        android:layout_alignStart="@+id/nominalTextView" />
+
+    <EditText
+        android:id="@+id/optimisticEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/optimisticTextView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <EditText
+        android:id="@+id/nominalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nominalTextView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <EditText
+        android:id="@+id/pessimisticEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pessimisticTextView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/meanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/standardDeviationTextView"
+        android:layout_alignLeft="@+id/pessimisticTextView"
+        android:layout_alignStart="@+id/pessimisticTextView"
+        android:layout_marginBottom="27dp"
+        android:text="Mean:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/standardDeviationAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:elevation="14dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="405dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/standardDeviationTextView"
+        android:layout_toEndOf="@+id/standardDeviationTextView"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp" />
+
+    <TextView
+        android:id="@+id/standardDeviationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/meanTextView"
+        android:layout_alignStart="@+id/meanTextView"
+        android:layout_alignTop="@+id/standardDeviationAmountTextView"
+        android:text="Standard Deviation:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/meanAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/meanTextView"
+        android:layout_alignLeft="@+id/standardDeviationAmountTextView"
+        android:layout_alignStart="@+id/standardDeviationAmountTextView" />
+
+    <TextView
+        android:id="@+id/enterEstimateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/optimisticEditText"
+        android:layout_alignLeft="@+id/optimisticTextView"
+        android:layout_alignStart="@+id/optimisticTextView"
+        android:layout_marginBottom="18dp"
+        android:text="Enter Your Estimates:"
+        android:textSize="24sp" />
+
+</android.widget.RelativeLayout>
